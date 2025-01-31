@@ -37,6 +37,6 @@ data class Cuadrado(val lado: Double): Polygon{
 }
 
 fun area(polygon: Polygon): Double{
-    polygon.printArea()
-    return polygon.area()
+    polygon.printArea() //se tiene que llamar al metodo para poder imprimir los valores 
+    return polygon.area() // tenemos que devolver el valor del area, por lo que por eso debe ir un return
 }
