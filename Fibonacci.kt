@@ -8,7 +8,6 @@ fun fibonacci(number: Int){
         n0 = n1
         n1 = fib
     }
-
 }
 
 fun main(){

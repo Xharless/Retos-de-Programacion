@@ -1,12 +1,8 @@
-fun factorial(number: Int){
-    var fact = 1
-    for(i in number downTo 1){
-        fact*=i
-    }
-    println("El resultado de $number! es $fact")
+fun factorial(number: Int): Int?{
+    return if(number < 0) null else if (number<=1) 1 else number * (factorial(number-1)!!)
+    
 }
 
-
 fun main(){
-    factorial(10)
+    println(factorial(10))
 }
